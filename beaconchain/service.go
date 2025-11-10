@@ -121,7 +121,7 @@ func (beacon *BeaconChain) GetBlock(ctx context.Context, slot phase0.Slot) (*ele
 		return nil, nil
 	}
 
-	return resp.Data.Electra, err
+	return resp.Data.Fulu, err
 }
 
 func (beacon *BeaconChain) GetProposerDuties(ctx context.Context, epoch phase0.Epoch, indices []phase0.ValidatorIndex) ([]*apiv1.ProposerDuty, error) {
